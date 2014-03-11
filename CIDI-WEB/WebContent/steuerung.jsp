@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Connect it, Drive it</title>
-<link href="bedienung.css" rel="stylesheet" type="text/css" />
+<link href="css/steuerung.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div style="padding: 0 0 0 300px;">
@@ -94,10 +94,10 @@
 <td>
 <form action="button.htm">
   <div>
-    <button name="Pfeilrechts" type="button"
-      value="pfeilrechtsbutton" onclick="alert('Pfeilrechts!');">
+    <button name="Pfeilunten" type="button"
+      value="pfeiluntenbutton" onclick="alert('Pfeilunten!');">
       <p>
-        <img src="images/pfeilrechts.png" width="50" height="50" alt="Pfeilrechts"><br>
+        <img src="images/pfeilunten.png" width="50" height="50" alt="Pfeilunten"><br>
       </p>
     </button>
   </div>
@@ -106,10 +106,10 @@
 <td>
 <form action="button.htm">
   <div>
-    <button name="Pfeilunten" type="button"
-      value="pfeiluntenbutton" onclick="alert('Pfeilunten!');">
+    <button name="Pfeilrechts" type="button"
+      value="pfeilrechtsbutton" onclick="alert('Pfeilrechts!');">
       <p>
-        <img src="images/pfeilunten.png" width="50" height="50" alt="Pfeilunten"><br>
+        <img src="images/pfeilrechts.png" width="50" height="50" alt="Pfeilrechts"><br>
       </p>
     </button>
   </div>
@@ -129,7 +129,7 @@
 <footer id="steuerung-footer">
 	<div id="steuerung-webshop">
 		<table>
-			<tr><td>AGB</td><td>Impressum</td><td><input type="submit" value="Zum Webshop"/></td></tr>
+			<tr><td>AGB</td><td>Impressum</td><td><FORM action="webshop.jsp"><INPUT type="submit" value="Zum Webshop"/></FORM></td></tr>
 		</table>
 	</div>
 </footer>
