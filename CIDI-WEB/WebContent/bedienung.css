@@ -11,53 +11,66 @@
 #steuerung-box img {
 	border:none;
 }
-#steuerung-eingabebox{
-	border-style: solid;
-	border-color:black;
-	border-width:2px;
+
+#steuerung-lampen{
+	margin-left: 30px;
+	
+	
 }
 
-#test{
-border-style: solid;
-	border-color:black;
-	border-width:2px;
+#steuerung-pfeile{
+	margin-left: 30px;
 }
-#steuerung-textbox {
-	background-color:#b7b7b7;
+
+#steuerung-logout{
+	margin-left: 90px;
+}
+#steuerung-timerbox{
+	width: 185px;
 	border-style: solid;
 	border-color:black;
 	border-width:2px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
+
+#steuerung-timer {
+	background-color:#b7b7b7;
+	border-style: solid;
+	border-color: Black;
+	border-width:2px;
+	font: bold 16px "Calibri", Arial;
+	text-align:center;
+	margin: 5px 10px 5px 10px;
+	padding: 2px 2px 2px 2px;
+}
+
+
+
 
 #steuerung-livetext {
 	background-color:#b7b7b7;
 	border-style: solid;
-	border-color:black;
+	border-color: Black;
 	border-width:2px;
+	margin-right: 100px;
 	margin-left: 100px;
 	font: bold 20px "Calibri", Arial;
+	text-align:center;
 }
 
-#steuerung-anmelde{
-	margin-top: 10px;
-	padding: 10px 10px 10px 10px;
-	background-color:#d9d9d9;
+
+#steuerung-Ueber{
+	margin-left: 10px;
+	width: 180px;
 	border-style: solid;
 	border-color:black;
 	border-width:2px;
-	
-
-}
-#steuerung-box h1{
-	width: 265px;
-	border-style: solid;
-	border-color:black;
-	border-width:2px;
-	padding:0;
-	margin:0;
-	font: bold 30px "Calibri", Arial;
+	font: bold 20px "Calibri", Arial;
 	text-align: center 
 }
+
 #steuerung-webshop{
 	padding: 0 0 0 350px;
 	width: 103px; 
@@ -70,9 +83,7 @@ border-style: solid;
 	width: 38em;
 	height: 50px;
 }
-#timerbox{
-margin-left:110px;
-}
+
 .form-steuerung  {
 	width: 205px;
 	padding: 10px 4px 6px 3px;

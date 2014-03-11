@@ -23,18 +23,20 @@
 
 <table>
 <tr><td>
+	<form action ="steuerung.jsp" method="post">
 	<table id="login-anmelde">
-		<tr><th><div id="login-textbox">Benutzername</div></th><td><div id="login-eingabebox"><input type="text" value="Max" name ="benutzername"/></div></td></tr>
-		<tr><th><div id="login-textbox">Password</div><td><div id="login-eingabebox"><input type="text" value="Mustermann" name ="password"/></div></td></tr>
-		<tr><th><input type="submit" value="Abbrechen" /></th>
+		<tr><th><div id="login-textbox">Benutzername</div></th><td><div id="login-eingabebox"><input type="text"  size="20" maxlength="20" name ="benutzername"/></div></td></tr>
+		<tr><th><div id="login-textbox">Password</div><td><div id="login-eingabebox"><input type="text"  size="20" maxlength="20" name ="password"/></div></td></tr>
+		<tr><th><input type="reset" value="Abbrechen" /></th>
 		<td><input type="submit" value="Anmelden"/></td></tr>
 	</table>
+	</form>
 </td><td>
 			<a href="#"><img src="images/screen.jpg" width="300" height="120"/></a>
 </td></tr>
 <tr><td></td><td>
 		<table id="timerbox">
-			<tr><td>Verbleibene Wartezeit<td><td><input type="submit" value="TIMER"/>
+			<tr><td><img src="images/wartezeit-btn.png"/><td><td><input type="submit" value="TIMER"/>
 			</td></tr>
 		</table>
 		</td></tr>
@@ -46,7 +48,7 @@
 <footer id="login-footer">
 	<div id="login-webshop">
 		<table>
-			<tr><td>AGB</td><td>Impressum</td><td><input type="submit" value="Zum Webshop"/></td></tr>
+			<tr><td>AGB</td><td>Impressum</td><td><a href="./webshop.jsp"><img src="images/webshop-btn.png"/></a></td></tr>
 		</table>
 	</div>
 </footer>

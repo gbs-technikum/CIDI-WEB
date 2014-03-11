@@ -12,14 +12,14 @@
 <div style="padding: 0 0 0 300px;">
 	<div id="login-box">
 		<div id="login-button">
-			<a href="#"><img src="images/login-btn.png"/></a>
+			<a href="./login.jsp"><img src="images/login-btn.png"/></a>
 		</div>
 	</div>
 </div>
 <footer id="login-footer">
 	<div id="login-webshop">
 		<table>
-			<tr><td>AGB</td><td>Impressum</td><td><input type="submit" value="Zum Webshop"/></td></tr>
+			<tr><td>AGB</td><td>Impressum</td><td><a href="./webshop.jsp"><img src="images/webshop-btn.png"/></a></td></tr>
 		</table>
 	</div>
 </footer>

@@ -9,19 +9,32 @@
 <link href="bedienung.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<!-- Prüfung des Passworts und Benutzers -->
+<% 
+String name = request.getParameter("benutzername");
+String password = request.getParameter("password");
+//Benutzereingaben unbedingt filtern !!!
+if(name != null && name.length() > 0 && name.matches("[A-Za-z ]*")) {
+	out.println("Name ist " + name +" Password ist  "+  password);
+	
+} else {
+	out.println("Eingabe ist Falsch");	
+}	
+%>
 <div style="padding: 0 0 0 300px;">
 <div id="steuerung-box">
 <table>
-<tr><td>Live-view</td><td>"Connect it, Drive it"</td><tr>
+<tr><td><div id="steuerung-livetext">Live-view</div></td><td><div id="steuerung-Ueber">"Connect it, Drive it"</div></td><tr>
 <tr><td><a href="#"><img src="images/screen.jpg" width="300" height="120"/></a></td>
-<td><table id="test"> 
-		<tr><td>Verbleibene Zeit</td></tr>
+<td><table id="steuerung-timerbox"> 
+		<tr><td><div id="steuerung-timer">Verbleibene Zeit</div></td></tr>
 		<tr><td><input type="submit" value="TIMER"/></td></tr>
-		<tr><td>Benutzername</td></tr>
+		<tr><td><div id="steuerung-timer">Benutzername</div></td></tr>
 		</table>
 </td></tr>
 </table>
 <!-- Lampen buttons -->
+<div id="steuerung-lampen">
 <table>
 <tr><td>
 <form action="button.htm">
@@ -61,10 +74,15 @@
 </form>
 </td>
 <td>
-<p>Verbindung beenden</p>
+<div id="steuerung-logout">
+<img src="images/unterbrechen-btn.png" alt="Unterbrechen">
+</div>
 </td>
 </table>
+</div>
+
 <!-- Steurunsbutton -->
+<div id="steuerung-pfeile">
 <table>
 <tr><td></td><td>
 <form action="button.htm">
@@ -116,22 +134,20 @@
 </form>
 </td></tr>
 </table>
-
-
-
-
 </div>
-</div>
-
 
 
 
 <footer id="steuerung-footer">
 	<div id="steuerung-webshop">
 		<table>
-			<tr><td>AGB</td><td>Impressum</td><td><input type="submit" value="Zum Webshop"/></td></tr>
+			<tr><td>AGB</td><td>Impressum</td><td><a href="./webshop.jsp"><img src="images/webshop-btn.png"/></a></td></tr>
 		</table>
 	</div>
+	
 </footer>
+
+</div>
+</div>
 </body>
 </html>
