@@ -7,6 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Connect it, Drive it</title>
 <link href="css/login.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="js/countdown.js"></script>
 </head>
 <body>
 <div style="padding: 0 0 0 300px;">
@@ -34,7 +36,7 @@
 </td></tr>
 <tr><td></td><td>
 		<table id="timerbox">
-			<tr><td>Verbleibene Wartezeit<td><td><input type="submit" value="TIMER"/>
+			<tr><td>Verbleibene Wartezeit<td><td><p class="countdown"></p>
 			</td></tr>
 		</table>
 		</td></tr>

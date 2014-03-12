@@ -24,41 +24,40 @@
 <!-- Lampen buttons -->
 <table>
 <tr><td>
-<form action="button.htm">
+
   <div>
     <button name="Hupe" type="button"
-      value="hupebutton" onclick="alert('Hupe!');">
+      value="hupebutton" id="buttonHupe">
       <p>
-        <img src="images/hupe.png" width="50" height="50" alt="Hupe"><br>
+        <img src="images/hupe_inaktiv.png" width="50" height="50" alt="Hupe" id="imgHupe"><br>
       </p>
     </button>
   </div>
-</form>
 
 </td>
 <td>
-<form action="button.htm">
+
   <div>
     <button name="Fernlicht" type="button"
-      value="fernlichtbutton" onclick="alert('Fernlicht!');">
+      value="fernlichtbutton" id="buttonFernlicht">
       <p>
-        <img src="images/fernlicht.png" width="50" height="50" alt="Fernlicht"><br>
+        <img src="images/fernlicht_inaktiv.png" width="50" height="50" alt="Fernlicht" id="imgFernlicht"><br>
       </p>
     </button>
   </div>
-</form>
+
 </td>
 <td>
-<form action="button.htm">
+
   <div>
     <button name="Abblendlicht" type="button"
-      value="abblendlichtbutton" onclick="alert('Abblendlicht!');">
+      value="abblendlichtbutton" id="buttonAbblendlicht">
       <p>
-        <img src="images/abblendlicht.png" width="50" height="50" alt="Abblendlicht"><br>
+        <img src="images/abblendlicht_inaktiv.png" width="50" height="50" alt="Abblendlicht" id="imgAbblendlicht"><br>
       </p>
     </button>
   </div>
-</form>
+
 </td>
 <td>
 <p>Verbindung beenden</p>
@@ -67,53 +66,53 @@
 <!-- Steurunsbutton -->
 <table>
 <tr><td></td><td>
-<form action="button.htm">
+
   <div>
     <button name="Pfeiloben" type="button"
-      value="pfeilobenbutton" onclick="alert('Pfeiloben!');">
+      value="pfeilobenbutton" id="buttonPfeiloben">
       <p>
-        <img src="images/pfeiloben.png" width="50" height="50" alt="Pfeiloben"><br>
+        <img src="images/oben_inaktiv.png" width="50" height="50" alt="Pfeiloben" id="imgPfeiloben"><br>
       </p>
     </button>
   </div>
-</form>
+
 </td>
 <td></td></tr>
 <tr><td>
-<form action="button.htm">
+
   <div>
     <button name="Pfeillinks" type="button"
-      value="pfeillinksbutton" onclick="alert('Abblendlicht!');">
+      value="pfeillinksbutton" id="buttonPfeillinks">
       <p>
-        <img src="images/pfeillinks.png" width="50" height="50" alt="Pfeillinks"><br>
+        <img src="images/links_inaktiv.png" width="50" height="50" alt="Pfeillinks" id="imgPfeillinks"><br>
       </p>
     </button>
   </div>
-</form>
+
 </td>
 <td>
-<form action="button.htm">
+
   <div>
     <button name="Pfeilunten" type="button"
-      value="pfeiluntenbutton" onclick="alert('Pfeilunten!');">
+      value="pfeiluntenbutton" id="buttonPfeilunten">
       <p>
-        <img src="images/pfeilunten.png" width="50" height="50" alt="Pfeilunten"><br>
+        <img src="images/unten_inaktiv.png" width="50" height="50" alt="Pfeilunten" id="imgPfeilunten"><br>
       </p>
     </button>
   </div>
-</form>
+
 </td>
 <td>
-<form action="button.htm">
+
   <div>
     <button name="Pfeilrechts" type="button"
-      value="pfeilrechtsbutton" onclick="alert('Pfeilrechts!');">
+      value="pfeilrechtsbutton" id="buttonPfeilrechts">
       <p>
-        <img src="images/pfeilrechts.png" width="50" height="50" alt="Pfeilrechts"><br>
+        <img src="images/rechts_inaktiv.png" width="50" height="50" alt="Pfeilrechts" id="imgPfeilrechts"><br>
       </p>
     </button>
   </div>
-</form>
+
 </td></tr>
 </table>
 
@@ -133,5 +132,7 @@
 		</table>
 	</div>
 </footer>
+<SCRIPT type="text/javascript" src="js/steuerung.js"></SCRIPT>
 </body>
+
 </html>
