@@ -1,91 +1,96 @@
 #steuerung-box {
-	width:600px;
+	width: 600px;
 	height: 500px;
 	color: black;
 	font: 12px Arial, Helvetica, sans-serif;
 	border-style: solid;
-	border-color:black;
-	border-width:2px;
+	border-color: black;
+	border-width: 2px;
 }
 
 #steuerung-box img {
-	border:none;
-}
-#steuerung-eingabebox{
-	border-style: solid;
-	border-color:black;
-	border-width:2px;
+	border: none;
 }
 
-#test{
-border-style: solid;
-	border-color:black;
-	border-width:2px;
+#steuerung-lampen {
+	margin-left: 30px;
 }
-#steuerung-textbox {
-	background-color:#b7b7b7;
+
+#steuerung-pfeile {
+	margin-left: 30px;
+}
+
+#steuerung-logout {
+	margin-left: 90px;
+}
+
+#steuerung-timerbox {
+	width: 185px;
 	border-style: solid;
-	border-color:black;
-	border-width:2px;
+	border-color: black;
+	border-width: 2px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#steuerung-timer {
+	background-color: #b7b7b7;
+	border-style: solid;
+	border-color: Black;
+	border-width: 2px;
+	font: bold 16px "Calibri", Arial;
+	text-align: center;
+	margin: 5px 10px 5px 10px;
+	padding: 2px 2px 2px 2px;
 }
 
 #steuerung-livetext {
-	background-color:#b7b7b7;
+	background-color: #b7b7b7;
 	border-style: solid;
-	border-color:black;
-	border-width:2px;
+	border-color: Black;
+	border-width: 2px;
+	margin-right: 100px;
 	margin-left: 100px;
 	font: bold 20px "Calibri", Arial;
+	text-align: center;
 }
 
-#steuerung-anmelde{
-	margin-top: 10px;
-	padding: 10px 10px 10px 10px;
-	background-color:#d9d9d9;
+#steuerung-Ueber {
+	margin-left: 10px;
+	width: 180px;
 	border-style: solid;
-	border-color:black;
-	border-width:2px;
-	
+	border-color: black;
+	border-width: 2px;
+	font: bold 20px "Calibri", Arial;
+	text-align: center
+}
 
-}
-#steuerung-box h1{
-	width: 265px;
-	border-style: solid;
-	border-color:black;
-	border-width:2px;
-	padding:0;
-	margin:0;
-	font: bold 30px "Calibri", Arial;
-	text-align: center 
-}
-#steuerung-webshop{
+#steuerung-webshop {
 	padding: 0 0 0 350px;
-	width: 103px; 
-	height: 42px; 
+	width: 103px;
+	height: 42px;
 }
 
-#steuerung-footer{
-	margin-left:20px;
+#steuerung-footer {
+	margin-left: 20px;
 	padding: 10px 0 0 0;
 	width: 38em;
 	height: 50px;
 }
-#timerbox{
-margin-left:110px;
-}
-.form-steuerung  {
+
+.form-steuerung {
 	width: 205px;
 	padding: 10px 4px 6px 3px;
 	border: 1px solid #0d2c52;
-	background-color:#1e4f8a;
+	background-color: #1e4f8a;
 	font-size: 16px;
 	color: #ebebeb;
 }
 
-
-.steuerung-box-options  {
-	clear:both;
-	padding-left:87px;
+.steuerung-box-options {
+	clear: both;
+	padding-left: 87px;
 	font-size: 11px;
 }
 
