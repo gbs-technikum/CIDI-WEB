@@ -1,4 +1,5 @@
 #steuerung-box {
+	margin-top: 20px;
 	width: 600px;
 	height: 500px;
 	color: black;
@@ -34,21 +35,24 @@
 	padding-right: 10px;
 }
 
-#steuerung-timer {
-	background-color: #b7b7b7;
+.steuerung-timertext {
+	background-color: #d9d9d9;
 	border-style: solid;
 	border-color: Black;
 	border-width: 2px;
 	font: bold 16px "Calibri", Arial;
 	text-align: center;
 	margin: 5px 10px 5px 10px;
-	padding: 2px 2px 2px 2px;
+}
+#steuerung-timer {
+	text-align: center;
+	margin: 5px 10px 5px 10px;
 }
 
 #steuerung-livetext {
-	background-color: #b7b7b7;
+	background-color: #d9d9d9;
 	border-style: solid;
-	border-color: Black;
+	border-color: black;
 	border-width: 2px;
 	margin-right: 100px;
 	margin-left: 100px;
@@ -73,10 +77,28 @@
 }
 
 #steuerung-footer {
-	margin-left: 20px;
-	padding: 10px 0 0 0;
+	margin-right: 100px;
+	padding: 0 0 0 0;
 	width: 38em;
 	height: 50px;
+}
+
+#steuerung-button{
+	margin-top: 5px;
+	margin-right: 280px;
+	
+}
+#button-verbindungabbrechen{
+	margin-left: 100px;
+	margin-bottom: 70px;
+}
+#buttontable-lichter{
+	margin-left: 47px;
+	margin-top: 5px;
+	margin-right: 157px;
+	border-spacing: 0;
+	border-collapse: collapse;
+
 }
 
 .form-steuerung {

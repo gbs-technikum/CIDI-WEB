@@ -9,17 +9,20 @@
 <link href="css/index.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div style="padding: 0 0 0 300px;">
-	<div id="login-box">
-		<div id="login-button">
-			<a href="login.jsp"><img src="images/login-btn.png"></a>
+	<div align="center">
+		<div id="login-box">
+			<div id="login-willkommen">
+				<h1>Connect it, Drive it</h1>
+			</div>
+			<div id="login-button">
+				<a href="login.jsp"><img src="images/login-btn.png"></a>
+			</div>
 		</div>
 	</div>
-</div>
-<footer id="login-footer">
+	<footer id="login-footer">
 	<div id="login-webshop">
 		<table>
-			<tr><td>AGB</td><td>Impressum</td><td><FORM action="webshop.jsp"><INPUT type="submit" value="Zum Webshop"/></FORM></td></tr>
+			<tr><td><a href="AGB.jsp">AGB</a></td><td><a href="Impressum.jsp">Impressum</a></td><td><FORM action="webshop.jsp"><INPUT type="submit" value="Zum Webshop"/></FORM></td></tr>
 		</table>
 	</div>
 </footer>

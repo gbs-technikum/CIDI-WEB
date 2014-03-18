@@ -21,170 +21,172 @@ out.println("Name ist " + name +" Password ist "+ password);
 out.println("Eingabe ist Falsch");	
 }	
 %>
-	<div style="padding: 0 0 0 300px;">
+	<div align="center">
 		<div id="steuerung-box">
 			<table>
 				<tr>
 					<td><div id="steuerung-livetext">Live-view</div></td>
-					<td><div id="steuerung-Ueber">"Connect it, Drive it"</div></td><tr>
-
+					<td><div id="steuerung-Ueber">Connect it, Drive it</div></td>
+				<tr>
 				<tr>
 					<td><a href="#"><img src="images/screen.jpg" width="300"
 							height="120" /></a></td>
-<td><table id="steuerung-timerbox">
-<tr>
-								<td><div id="steuerung-timer">Verbleibene Zeit</div></td>
+					<td><table id="steuerung-timerbox">
+							<tr>
+								<td><div class="steuerung-timertext">Verbleibene Zeit</div></td>
 							</tr>
-<tr>
-								<td><input type="submit" value="TIMER" /></td>
+							<tr>
+					
+								<td><div id="steuerung-timer"><input type="submit" value="TIMER" /></div></td>
 							</tr>
-<tr>
-								<td><div id="steuerung-timer">Benutzername</div></td>
+							<tr>
+								<td><div class="steuerung-timertext">Benutzername</div></td>
 							</tr>
-</table>
-</td>
+						</table></td>
 				</tr>
-</table>
-		
-					<!-- Lampen buttons -->
-<table>
-<tr>
-							<td>
+			</table>
 
-  <div>
-    <button name="Hupe" type="button" value="hupebutton" id="buttonHupe">
-      <p>
-        <img src="images/hupe_inaktiv.png" width="50" height="50"
-												alt="Hupe" id="imgHupe"><br>
-      
-										</p>
-    </button>
-  </div>
+			<!-- Lampen buttons -->
+			<table id="buttontable-lichter">
+				<tr>
+					<td>
 
-</td>
-<td>
+						<div>
+							<button name="Hupe" type="button" value="hupebutton"
+								id="buttonHupe">
+								<p>
+									<img src="images/hupe_inaktiv.png" width="50" height="50"
+										alt="Hupe" id="imgHupe"><br>
+								</p>
+							</button>
+						</div>
 
-  <div>
-    <button name="Fernlicht" type="button" value="fernlichtbutton"
-										id="buttonFernlicht">
-      <p>
-        <img src="images/fernlicht_inaktiv.png" width="50" height="50"
-												alt="Fernlicht" id="imgFernlicht"><br>
-      
-										</p>
-    </button>
-  </div>
+					</td>
+					<td>
 
-</td>
-<td>
+						<div>
+							<button name="Fernlicht" type="button" value="fernlichtbutton"
+								id="buttonFernlicht">
+								<p>
+									<img src="images/fernlicht_inaktiv.png" width="50" height="50"
+										alt="Fernlicht" id="imgFernlicht"><br>
+								</p>
+							</button>
+						</div>
 
-  <div>
-    <button name="Abblendlicht" type="button" value="abblendlichtbutton"
-										id="buttonAbblendlicht">
-      <p>
-        <img src="images/abblendlicht_inaktiv.png" width="50"
-												height="50" alt="Abblendlicht" id="imgAbblendlicht"><br>
-      
-										</p>
-    </button>
-  </div>
+					</td>
+					<td>
 
-</td>
-<td>
-<p>Verbindung beenden</p>
-</td>
+						<div>
+							<button name="Abblendlicht" type="button"
+								value="abblendlichtbutton" id="buttonAbblendlicht">
+								<p>
+									<img src="images/abblendlicht_inaktiv.png" width="50"
+										height="50" alt="Abblendlicht" id="imgAbblendlicht"><br>
+								</p>
+							</button>
+						</div>
 
+					</td>
+					<td>
+					<div id ="button-verbindungabbrechen">
+						<FORM action="webshop.jsp">
+									<INPUT type="submit" value="Verbindung abbrechen" />
+								</FORM>
+					</div>
+					</td>
+					
+			</table>
+			<!-- Steurungsbutton -->
+			<table id="steuerung-button">
+				<tr>
+					<td></td>
+					<td>
+
+						<div>
+							<button name="Pfeiloben" type="button" value="pfeilobenbutton"
+								id="buttonPfeiloben">
+								<p>
+									<img src="images/oben_inaktiv.png" width="50" height="50"
+										alt="Pfeiloben" id="imgPfeiloben"><br>
+								</p>
+							</button>
+						</div>
+
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+
+						<div>
+							<button name="Pfeillinks" type="button" value="pfeillinksbutton"
+								id="buttonPfeillinks">
+								<p>
+									<img src="images/links_inaktiv.png" width="50" height="50"
+										alt="Pfeillinks" id="imgPfeillinks"><br>
+								</p>
+							</button>
+						</div>
+
+					</td>
+					<td>
+
+						<div>
+							<button name="Pfeilunten" type="button" value="pfeiluntenbutton"
+								id="buttonPfeilunten">
+								<p>
+									<img src="images/unten_inaktiv.png" width="50" height="50"
+										alt="Pfeilunten" id="imgPfeilunten"><br>
+								</p>
+							</button>
+						</div>
+
+					</td>
+					<td>
+
+						<div>
+							<button name="Pfeilrechts" type="button"
+								value="pfeilrechtsbutton" id="buttonPfeilrechts">
+								<p>
+									<img src="images/rechts_inaktiv.png" width="50" height="50"
+										alt="Pfeilrechts" id="imgPfeilrechts"><br>
+								</p>
+							</button>
+						</div>
+
+					</td>
+				</tr>
+			</table>
+
+
+
+
+
+
+			<footer id="steuerung-footer">
+				<div id="steuerung-webshop">
+					<table>
+						<tr>
+							<td><a href="AGB.jsp">AGB</a></td>
+							<td><a href="Impressum.jsp">Impressum</a></td>
+							<td><FORM action="webshop.jsp">
+									<INPUT type="submit" value="Zum Webshop" />
+								</FORM></td>
+						</tr>
 					</table>
-<!-- Steurunsbutton -->
-<table>
-<tr>
-							<td></td>
-							<td>
-
-  <div>
-    <button name="Pfeiloben" type="button" value="pfeilobenbutton"
-										id="buttonPfeiloben">
-      <p>
-        <img src="images/oben_inaktiv.png" width="50" height="50"
-												alt="Pfeiloben" id="imgPfeiloben"><br>
-      
-										</p>
-    </button>
-  </div>
-
-</td>
-<td></td>
-						</tr>
-<tr>
-							<td>
-
-  <div>
-    <button name="Pfeillinks" type="button" value="pfeillinksbutton"
-										id="buttonPfeillinks">
-      <p>
-        <img src="images/links_inaktiv.png" width="50" height="50"
-												alt="Pfeillinks" id="imgPfeillinks"><br>
-      
-										</p>
-    </button>
-  </div>
-
-</td>
-<td>
-
-  <div>
-    <button name="Pfeilunten" type="button" value="pfeiluntenbutton"
-										id="buttonPfeilunten">
-      <p>
-        <img src="images/unten_inaktiv.png" width="50" height="50"
-												alt="Pfeilunten" id="imgPfeilunten"><br>
-      
-										</p>
-    </button>
-  </div>
-
-</td>
-<td>
-
-  <div>
-    <button name="Pfeilrechts" type="button" value="pfeilrechtsbutton"
-										id="buttonPfeilrechts">
-      <p>
-        <img src="images/rechts_inaktiv.png" width="50" height="50"
-												alt="Pfeilrechts" id="imgPfeilrechts"><br>
-      
-										</p>
-    </button>
-  </div>
-
-</td>
-						</tr>
-</table>
-
-
-
-
-
 				</div>
-</div>
+			</footer>
+		</div>
 
 
-
-
-<footer id="steuerung-footer">
-	<div id="steuerung-webshop">
-		<table>
-			<tr>
-					<td>AGB</td>
-					<td>Impressum</td>
-					<td><FORM action="webshop.jsp">
-							<INPUT type="submit" value="Zum Webshop" />
-						</FORM></td>
-				</tr>
-		</table>
 	</div>
-</footer>
-<SCRIPT type="text/javascript" src="js/steuerung.js"></SCRIPT>
+
+
+
+
+
+	<SCRIPT type="text/javascript" src="js/steuerung.js"></SCRIPT>
 </body>
 
 </html>

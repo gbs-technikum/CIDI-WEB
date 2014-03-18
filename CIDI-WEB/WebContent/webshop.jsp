@@ -9,7 +9,7 @@
 <link href="css/webshop.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div style="padding: 0 0 0 300px;">
+	<div align="center">
 		<div id="webshop-box">
 			<h1>"Connect it, Drive it" Webshop</h1>
 
@@ -33,7 +33,7 @@
 
 								<form action="test.jsp" method="post">
 									<td id="test"><input type="text" size="20" maxlength="20"
-										name="Menge" />
+										name="Menge" value="1" />
 										</div></td>
 									<td><input type="submit" value="in den Warenkorb" /></td>
 							</tr>
