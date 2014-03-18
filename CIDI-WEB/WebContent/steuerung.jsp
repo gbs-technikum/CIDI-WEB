@@ -36,8 +36,10 @@ out.println("Eingabe ist Falsch");
 								<td><div class="steuerung-timertext">Verbleibene Zeit</div></td>
 							</tr>
 							<tr>
-					
-								<td><div id="steuerung-timer"><input type="submit" value="TIMER" /></div></td>
+
+								<td><div id="steuerung-timer">
+										<input type="submit" value="TIMER" />
+									</div></td>
 							</tr>
 							<tr>
 								<td><div class="steuerung-timertext">Benutzername</div></td>
@@ -89,13 +91,12 @@ out.println("Eingabe ist Falsch");
 
 					</td>
 					<td>
-					<div id ="button-verbindungabbrechen">
-						<FORM action="webshop.jsp">
-									<INPUT type="submit" value="Verbindung abbrechen" />
-								</FORM>
-					</div>
+						<div id="button-verbindungabbrechen">
+							<FORM action="webshop.jsp">
+								<INPUT type="submit" value="Verbindung abbrechen" />
+							</FORM>
+						</div>
 					</td>
-					
 			</table>
 			<!-- Steurungsbutton -->
 			<table id="steuerung-button">

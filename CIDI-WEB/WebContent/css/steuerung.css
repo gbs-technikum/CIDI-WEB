@@ -50,6 +50,7 @@
 }
 
 #steuerung-livetext {
+	margin-top: 5px;
 	background-color: #d9d9d9;
 	border-style: solid;
 	border-color: black;
@@ -61,6 +62,7 @@
 }
 
 #steuerung-Ueber {
+	margin-top: 5px;
 	margin-left: 10px;
 	width: 180px;
 	border-style: solid;
