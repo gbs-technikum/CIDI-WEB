@@ -31,8 +31,8 @@
 						<table>
 							<tr>
 								<td>
-									<table id="login-anmelde">
-										<form action="steuerung.jsp" method="post">
+									<form action="steuerung.jsp" method="post">
+										<table id="login-anmelde">
 											<tr>
 												<th>Benutzername</th>
 												<td><input type="text" value="Max" name="benutzername" />
@@ -47,8 +47,9 @@
 												<th><input type="reset" value="Abbrechen" /></th>
 												<td><input type="submit" value="Anmelden" /></td>
 											</tr>
-										</form>
-									</table>
+
+										</table>
+									</form>
 								</td>
 								<td><a href="#"><img src="images/screen.jpg"
 										width="300" height="120"></a></td>
@@ -65,20 +66,20 @@
 							</tr>
 						</table>
 			</table>
-	
-	<footer id="login-footer">
-		<div id="login-webshop">
-			<table>
-				<tr>
-					<td><a href="AGB.jsp">AGB</a></td>
-					<td><a href="Impressum.jsp">Impressum</a></td>
-					<td><FORM action="webshop.jsp">
-							<INPUT type="submit" value="Zum Webshop" />
-						</FORM></td>
-				</tr>
-			</table>
-		</div>
-	</footer>
+
+			<footer id="login-footer">
+				<div id="login-webshop">
+					<table>
+						<tr>
+							<td><a href="AGB.jsp">AGB</a></td>
+							<td><a href="Impressum.jsp">Impressum</a></td>
+							<td><FORM action="webshop.jsp">
+									<INPUT type="submit" value="Zum Webshop" />
+								</FORM></td>
+						</tr>
+					</table>
+				</div>
+			</footer>
 		</div>
 	</div>
 	<SCRIPT type="text/javascript" src="js/countdown.js"></SCRIPT>
