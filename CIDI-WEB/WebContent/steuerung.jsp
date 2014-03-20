@@ -36,13 +36,11 @@ out.println("Eingabe ist Falsch");
 								<td><div class="steuerung-timertext">Verbleibene Zeit</div></td>
 							</tr>
 							<tr>
-
-								<td><div id="steuerung-timer">
-										<input type="submit" value="TIMER" />
-									</div></td>
+								<td><a id="countdown-timer"></a></td>
 							</tr>
 							<tr>
 								<td><div class="steuerung-timertext">Benutzername</div></td>
+
 							</tr>
 						</table></td>
 				</tr>
@@ -179,14 +177,8 @@ out.println("Eingabe ist Falsch");
 				</div>
 			</footer>
 		</div>
-
-
 	</div>
-
-
-
-
-
+	<SCRIPT type="text/javascript" src="js/countdown.js"></SCRIPT>
 	<SCRIPT type="text/javascript" src="js/steuerung.js"></SCRIPT>
 </body>
 

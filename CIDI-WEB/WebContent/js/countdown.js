@@ -1,31 +1,31 @@
-// Our countdown plugin takes a callback, a duration, and an optional message
-$.fn.countdown = function (callback, duration, message) {
-    // If no message is provided, we use an empty string
-    message = message || "";
-    // Get reference to container, and set initial content
-    var container = $(this[0]).html(duration + message);
-    // Get reference to the interval doing the countdown
-    var countdown = setInterval(function () {
-        // If seconds remain
-        if (--duration) {
-            // Update our container's message
-            container.html(duration + message);
-        // Otherwise
-        } else {
-            // Clear the countdown interval
-            clearInterval(countdown);
-            // And fire the callback passing our container as `this`
-            callback.call(container);   
-        }
-    // Run interval every 1000ms (1 second)
-    }, 1000);
-    
+var wartezeitMin = 0;
+var wartezeitSek = 10;
+var loginOk = true;
+
+document.getElementById("countdown-timer").innerHTML = "15:00";
+function  countdown(){
+	
+	wartezeitSek--;
+	if (wartezeitSek < 0) {
+		wartezeitSek = 59;
+		wartezeitMin--;
+	}
+
+	var wMin=""+wartezeitMin, wSek=""+wartezeitSek;
+
+	if (wartezeitMin < 10)
+		wMin = "0" + wartezeitMin;
+	if (wartezeitSek < 10)
+		wSek = "0" + wartezeitSek;
+
+	document.getElementById("countdown-timer").innerHTML = wMin+":"+wSek;
+	
+	if (wartezeitMin === 0 && wartezeitSek === 0 && loginOk) {
+		window.location = "steuerung.jsp";
+	} else if (wartezeitMin === 0 && wartezeitSek === 0) {
+		wartezeitMin = 15;
+		wartezeitSek = 00;
+	}
 };
 
-// Use p.countdown as container, pass redirect, duration, and optional message
-$(".countdown").countdown(redirect, 5, "s");
-
-// Function to be called after 5 seconds
-function redirect () {
-     window.location = "steuerung.jsp";
-}
+var timerID = setInterval("countdown()", 1000);
