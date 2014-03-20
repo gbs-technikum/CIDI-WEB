@@ -44,9 +44,8 @@
 	text-align: center;
 	margin: 5px 10px 5px 10px;
 }
-#steuerung-timer {
-	text-align: center;
-	margin: 5px 10px 5px 10px;
+#countdown-timer {
+	margin: 5px 10px 5px 60px;
 }
 
 #steuerung-livetext {
@@ -79,7 +78,7 @@
 }
 
 #steuerung-footer {
-	margin-right: 100px;
+	margin-right: 120px;
 	padding: 0 0 0 0;
 	width: 38em;
 	height: 50px;

@@ -33,20 +33,20 @@
 								<td>
 									<table id="login-anmelde">
 										<form action="steuerung.jsp" method="post">
-										<tr>
-											<th>Benutzername</th>
-											<td><input type="text" value="Max" name="benutzername" />
-											</td>
-										</tr>
-										<tr>
-											<th>Password
-											<td><input type="text" value="Mustermann"
-												name="password" /></td>
-										</tr>
-										<tr>
-											<th><input type="reset" value="Abbrechen" /></th>
-											<td><input type="submit" value="Anmelden" /></td>
-										</tr>
+											<tr>
+												<th>Benutzername</th>
+												<td><input type="text" value="Max" name="benutzername" />
+												</td>
+											</tr>
+											<tr>
+												<th>Password
+												<td><input type="text" value="Mustermann"
+													name="password" /></td>
+											</tr>
+											<tr>
+												<th><input type="reset" value="Abbrechen" /></th>
+												<td><input type="submit" value="Anmelden" /></td>
+											</tr>
 										</form>
 									</table>
 								</td>
@@ -64,64 +64,25 @@
 								</td>
 							</tr>
 						</table>
+			</table>
+	
+	<footer id="login-footer">
+		<div id="login-webshop">
+			<table>
+				<tr>
+					<td><a href="AGB.jsp">AGB</a></td>
+					<td><a href="Impressum.jsp">Impressum</a></td>
+					<td><FORM action="webshop.jsp">
+							<INPUT type="submit" value="Zum Webshop" />
+						</FORM></td>
+				</tr>
+			</table>
 		</div>
-		<footer id="login-footer">
-			<div id="login-webshop">
-				<table>
-					<tr>
-						<td><a href="AGB.jsp">AGB</a></td>
-						<td><a href="Impressum.jsp">Impressum</a></td>
-						<td><FORM action="webshop.jsp">
-								<INPUT type="submit" value="Zum Webshop" />
-							</FORM></td>
-					</tr>
-				</table>
-			</div>
-		</footer>
-										<tr>
-											<th><div id="login-textbox">Benutzername</div></th>
-											<td><div id="login-eingabebox">
-													<input type="text" value="Max" name="benutzername" />
-												</div></td>
-										</tr>
-										<tr>
-											<th><div id="login-textbox">Password</div>
-											<td><div id="login-eingabebox">
-													<input type="text" value="Mustermann" name="password" />
-												</div></td>
-										</tr>
-										<tr>
-											<th><input type="submit" value="Abbrechen" /></th>
-											<td><input type="submit" value="Anmelden" /></td>
-										</tr>
-									</table>
-								</td>
-								<td><a href="#"><img src="images/screen.jpg"
-										width="300" height="120"></a></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>
-									<table id="timerbox">
-										<tr>
-											<td><a>Verbleibene Wartezeit: </a> <a id="countdown-timer"></a></td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-						</div> <footer id="login-footer">
-							<div id="login-webshop">
-								<table>
-									<tr>
-										<td>AGB</td>
-										<td>Impressum</td>
-										<td><FORM action="webshop.jsp">
-												<INPUT type="submit" value="Zum Webshop" />
-											</FORM></td>
-									</tr>
-								</table>
-							</div>
-						</footer> <SCRIPT type="text/javascript" src="js/countdown.js"></SCRIPT>
+	</footer>
+		</div>
+	</div>
+	<SCRIPT type="text/javascript" src="js/countdown.js"></SCRIPT>
 </body>
+
 </html>
+
