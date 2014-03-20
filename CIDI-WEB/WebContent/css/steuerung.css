@@ -8,15 +8,9 @@
 	border-color: black;
 	border-width: 2px;
 }
-
-#steuerung-box img {
-	border: none;
-}
-
 #steuerung-lampen {
 	margin-left: 30px;
 }
-
 #steuerung-pfeile {
 	margin-left: 30px;
 }
@@ -100,24 +94,4 @@
 	border-spacing: 0;
 	border-collapse: collapse;
 
-}
-
-.form-steuerung {
-	width: 205px;
-	padding: 10px 4px 6px 3px;
-	border: 1px solid #0d2c52;
-	background-color: #1e4f8a;
-	font-size: 16px;
-	color: #ebebeb;
-}
-
-.steuerung-box-options {
-	clear: both;
-	padding-left: 87px;
-	font-size: 11px;
-}
-
-.steuerung-box-options a {
-	color: #ebebeb;
-	font-size: 11px;
 }

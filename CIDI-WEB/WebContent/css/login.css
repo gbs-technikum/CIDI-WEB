@@ -10,18 +10,6 @@
 	border-color:black;
 	border-width:2px;
 }
-
-#login-box img {
-	border:none;
-}
-
-#test{
-border-style: solid;
-	border-color:black;
-	border-width:2px;
-}
-
-
 #login-livetext {
 	background-color:#E9E9E9;
 	border-style: solid;
@@ -67,24 +55,4 @@ border-style: solid;
 }
 #timerbox{
 margin-left:110px;
-}
-.form-login  {
-	width: 205px;
-	padding: 10px 4px 6px 3px;
-	border: 1px solid #0d2c52;
-	background-color:#1e4f8a;
-	font-size: 16px;
-	color: #ebebeb;
-}
-
-
-.login-box-options  {
-	clear:both;
-	padding-left:87px;
-	font-size: 11px;
-}
-
-.login-box-options a {
-	color: #ebebeb;
-	font-size: 11px;
 }

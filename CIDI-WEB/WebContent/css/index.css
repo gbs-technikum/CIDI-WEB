@@ -11,10 +11,6 @@
 	background: url(../images/background.jpg) no-repeat left top;
 }
 
-#index-box img {
-	border:none;
-}
-
 #login-button{
 	margin: 0 auto 0 auto;
 	padding: 220px 0 0 0;
@@ -33,25 +29,4 @@
 	border-style: solid;
 	border-color:black;
 	border-width:2px;
-}
-
-.form-login  {
-	width: 205px;
-	padding: 10px 4px 6px 3px;
-	border: 1px solid #0d2c52;
-	background-color:#1e4f8a;
-	font-size: 16px;
-	color: #ebebeb;
-}
-
-
-.login-box-options  {
-	clear:both;
-	padding-left:87px;
-	font-size: 11px;
-}
-
-.login-box-options a {
-	color: #ebebeb;
-	font-size: 11px;
 }
