@@ -1,6 +1,6 @@
 var wartezeitMin = 0;
 var wartezeitSek = 10;
-var loginOk = false;
+var loginOk = true;
 
 document.getElementById("countdown-timer").innerHTML = "15:00";
 function  countdown(){
@@ -21,9 +21,7 @@ function  countdown(){
 	document.getElementById("countdown-timer").innerHTML = wMin+":"+wSek;
 	
 	if (wartezeitMin === 0 && wartezeitSek === 0 && loginOk) {
-		// new GuiDrive(GuiUser.this); // Eventuallität (loginKorrekt &&
-		// warteZeitAbgelaufen ) -> Dann Login????
-		console.log("asd");
+		window.location = "steuerung.jsp";
 	} else if (wartezeitMin === 0 && wartezeitSek === 0) {
 		wartezeitMin = 15;
 		wartezeitSek = 00;
