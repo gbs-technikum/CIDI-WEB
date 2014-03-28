@@ -11,6 +11,9 @@ var bleft = 0;
 var bright = 0;
 var bup = 0;
 var bdown = 0;
+var bflicht = 0;
+var balicht = 0;
+var bhupe = 0;
 
 // /////////////Funktionen Licht\\\\\\\\\\\\\\\
 // ///Funktion Abblendlicht\\\\\
@@ -19,11 +22,14 @@ var switchAbblendlicht = function() {
 		document.getElementById("imgAbblendlicht").setAttribute("src",
 				"images/abblendlicht_aktiv.png");
 		imgAbblendlicht--;
+		balicht = 1;
 	} else {
 		document.getElementById("imgAbblendlicht").setAttribute("src",
 				"images/abblendlicht_inaktiv.png");
 		imgAbblendlicht++;
+		balicht = 0;
 	}
+	moveAjax();
 };
 
 // ///Funktion Fernlicht\\\\\
@@ -32,11 +38,14 @@ var switchFernlicht = function() {
 		document.getElementById("imgFernlicht").setAttribute("src",
 				"images/fernlicht_aktiv.png");
 		imgFernlicht--;
+		bflicht = 1;
 	} else {
 		document.getElementById("imgFernlicht").setAttribute("src",
 				"images/fernlicht_inaktiv.png");
 		imgFernlicht++;
+		bflicht = 0;
 	}
+	moveAjax();
 };
 
 // ///Funktion Hupe\\\\\
@@ -44,10 +53,13 @@ var switchHupe = function(eingabe) {
 	if (eingabe === "ein") {
 		document.getElementById("imgHupe").setAttribute("src",
 				"images/hupe_aktiv.png");
+		bhupe=1;
 	} else {
 		document.getElementById("imgHupe").setAttribute("src",
 				"images/hupe_inaktiv.png");
+		bhupe=0;
 	}
+	moveAjax();
 };
 
 // /////////////Funktionen Pfeiltasten\\\\\\\\\\\\\\\
@@ -56,11 +68,11 @@ var switchPfeiloben = function(eingabe) {
 	if (eingabe === "ein") {
 		document.getElementById("imgPfeiloben").setAttribute("src",
 				"images/oben_aktiv.png");
-		bup++;
+		bup = 1;
 	} else {
 		document.getElementById("imgPfeiloben").setAttribute("src",
 				"images/oben_inaktiv.png");
-		bup--;
+		bup = 0;
 	}
 	moveAjax();
 };
@@ -70,11 +82,11 @@ var switchPfeillinks = function(eingabe) {
 	if (eingabe === "ein") {
 		document.getElementById("imgPfeillinks").setAttribute("src",
 				"images/links_aktiv.png");
-		bleft++;
+		bleft = 1;
 	} else {
 		document.getElementById("imgPfeillinks").setAttribute("src",
 				"images/links_inaktiv.png");
-		bleft--;
+		bleft = 0;
 	}
 	moveAjax();
 };
@@ -84,11 +96,11 @@ var switchPfeilunten = function(eingabe) {
 	if (eingabe === "ein") {
 		document.getElementById("imgPfeilunten").setAttribute("src",
 				"images/unten_aktiv.png");
-		bdown++;
+		bdown = 1;
 	} else {
 		document.getElementById("imgPfeilunten").setAttribute("src",
 				"images/unten_inaktiv.png");
-		bdown--;
+		bdown = 0;
 	}
 	moveAjax();
 };
@@ -98,11 +110,11 @@ var switchPfeilrechts = function(eingabe) {
 	if (eingabe === "ein") {
 		document.getElementById("imgPfeilrechts").setAttribute("src",
 				"images/rechts_aktiv.png");
-		bright++;
+		bright = 1;
 	} else {
 		document.getElementById("imgPfeilrechts").setAttribute("src",
 				"images/rechts_inaktiv.png");
-		bright--;
+		bright = 0;
 	}
 	moveAjax();
 };
@@ -217,6 +229,8 @@ window.addEventListener('keyup', function(e) {
 
 var moveAjax = function() {
 	var request = new XMLHttpRequest();
-	request.open("GET", "Move?left="+bleft+"&right="+bright+"up="+bup+"&down="+bdown);
+	request.open("GET", "sentData?left=" + bleft + "&right=" + bright + "&up="
+			+ bup + "&down=" + bdown + "&flicht=" + bflicht + "&alicht="
+			+ balicht + "&hupe=" + bhupe);
 	request.send();
 };

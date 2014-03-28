@@ -9,18 +9,6 @@
 <link href="css/steuerung.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<!-- Prüfung des Passworts und Benutzers -->
-	<%
-String name = request.getParameter("benutzername");
-String password = request.getParameter("password");
-//Benutzereingaben unbedingt filtern !!!
-if(name != null && name.length() > 0 && name.matches("[A-Za-z ]*")) {
-out.println("Name ist " + name +" Password ist "+ password);
-
-} else {
-out.println("Eingabe ist Falsch");	
-}	
-%>
 	<div align="center">
 		<div id="steuerung-box">
 			<table>
