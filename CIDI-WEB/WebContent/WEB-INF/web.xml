@@ -17,4 +17,12 @@
     <servlet-name>Test</servlet-name>
     <url-pattern>/Test</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>Move</servlet-name>
+  	<servlet-class>de.cidi.Move</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Move</servlet-name>
+  	<url-pattern>/Move</url-pattern>
+  </servlet-mapping>
 </web-app>
