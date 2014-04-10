@@ -29,15 +29,15 @@ public class SENTDATA extends HttpServlet{
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		int left	=	Integer.parseInt(request.getParameter("left"));
-		int right 	=	Integer.parseInt(request.getParameter("right"));
-		int up 		= 	Integer.parseInt(request.getParameter("up"));
-		int down 	= 	Integer.parseInt(request.getParameter("down"));
-		int flicht 	= 	Integer.parseInt(request.getParameter("flicht"));
-		int alicht 	= 	Integer.parseInt(request.getParameter("alicht"));
-		int hupe 	= 	Integer.parseInt(request.getParameter("hupe"));
-		c.foo();
-		System.out.println("left: "+left+" right: "+right+" up: "+up+" down: "+down+" flicht: "+flicht+" alicht: "+alicht+" hupe: "+hupe);
+		boolean left	=	Boolean.parseBoolean(request.getParameter("left"));
+		boolean right 	=	Boolean.parseBoolean(request.getParameter("right"));
+		boolean up 		= 	Boolean.parseBoolean(request.getParameter("up"));
+		boolean down 	= 	Boolean.parseBoolean(request.getParameter("down"));
+		boolean flicht 	= 	Boolean.parseBoolean(request.getParameter("flicht"));
+		boolean alicht 	= 	Boolean.parseBoolean(request.getParameter("alicht"));
+		boolean hupe 	= 	Boolean.parseBoolean(request.getParameter("hupe"));
+		
+		c.drive(left,right,up,down,flicht,alicht,hupe);
 	}
 
 }

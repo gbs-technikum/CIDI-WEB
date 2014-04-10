@@ -1,19 +1,13 @@
-//////////////Globale Variablen\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-var imgAbblendlicht = 1;
-var imgFernlicht = 1;
-
-// //////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 // ///Status\\\\\
 
-var bleft = 0;
-var bright = 0;
-var bup = 0;
-var bdown = 0;
-var bflicht = 0;
-var balicht = 0;
-var bhupe = 0;
+var bleft = false;
+var bright = false;
+var bup = false;
+var bdown = false;
+var bflicht = false;
+var balicht = false;
+var bhupe = false;
 
 // /////////////Funktionen Licht\\\\\\\\\\\\\\\
 // ///Funktion Abblendlicht\\\\\
@@ -22,12 +16,12 @@ var switchAbblendlicht = function() {
 		document.getElementById("imgAbblendlicht").setAttribute("src",
 				"images/abblendlicht_aktiv.png");
 		imgAbblendlicht--;
-		balicht = 1;
+		balicht = true;
 	} else {
 		document.getElementById("imgAbblendlicht").setAttribute("src",
 				"images/abblendlicht_inaktiv.png");
 		imgAbblendlicht++;
-		balicht = 0;
+		balicht = false;
 	}
 	moveAjax();
 };
@@ -38,12 +32,12 @@ var switchFernlicht = function() {
 		document.getElementById("imgFernlicht").setAttribute("src",
 				"images/fernlicht_aktiv.png");
 		imgFernlicht--;
-		bflicht = 1;
+		bflicht = true;
 	} else {
 		document.getElementById("imgFernlicht").setAttribute("src",
 				"images/fernlicht_inaktiv.png");
 		imgFernlicht++;
-		bflicht = 0;
+		bflicht = false;
 	}
 	moveAjax();
 };
@@ -53,11 +47,11 @@ var switchHupe = function(eingabe) {
 	if (eingabe === "ein") {
 		document.getElementById("imgHupe").setAttribute("src",
 				"images/hupe_aktiv.png");
-		bhupe=1;
+		bhupe = true;
 	} else {
 		document.getElementById("imgHupe").setAttribute("src",
 				"images/hupe_inaktiv.png");
-		bhupe=0;
+		bhupe=false;
 	}
 	moveAjax();
 };
@@ -68,11 +62,11 @@ var switchPfeiloben = function(eingabe) {
 	if (eingabe === "ein") {
 		document.getElementById("imgPfeiloben").setAttribute("src",
 				"images/oben_aktiv.png");
-		bup = 1;
+		bup = true;
 	} else {
 		document.getElementById("imgPfeiloben").setAttribute("src",
 				"images/oben_inaktiv.png");
-		bup = 0;
+		bup = false;
 	}
 	moveAjax();
 };
@@ -82,11 +76,11 @@ var switchPfeillinks = function(eingabe) {
 	if (eingabe === "ein") {
 		document.getElementById("imgPfeillinks").setAttribute("src",
 				"images/links_aktiv.png");
-		bleft = 1;
+		bleft = true;
 	} else {
 		document.getElementById("imgPfeillinks").setAttribute("src",
 				"images/links_inaktiv.png");
-		bleft = 0;
+		bleft = false;
 	}
 	moveAjax();
 };
@@ -96,11 +90,11 @@ var switchPfeilunten = function(eingabe) {
 	if (eingabe === "ein") {
 		document.getElementById("imgPfeilunten").setAttribute("src",
 				"images/unten_aktiv.png");
-		bdown = 1;
+		bdown = true;
 	} else {
 		document.getElementById("imgPfeilunten").setAttribute("src",
 				"images/unten_inaktiv.png");
-		bdown = 0;
+		bdown = false;
 	}
 	moveAjax();
 };
@@ -110,11 +104,11 @@ var switchPfeilrechts = function(eingabe) {
 	if (eingabe === "ein") {
 		document.getElementById("imgPfeilrechts").setAttribute("src",
 				"images/rechts_aktiv.png");
-		bright = 1;
+		bright = true;
 	} else {
 		document.getElementById("imgPfeilrechts").setAttribute("src",
 				"images/rechts_inaktiv.png");
-		bright = 0;
+		bright = false;
 	}
 	moveAjax();
 };

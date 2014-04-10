@@ -28,5 +28,20 @@
 	<classpathentry kind="lib" path="src/de/lib/pi4j/pi4j-service-javadoc.jar"/>
 	<classpathentry kind="lib" path="src/de/lib/pi4j/pi4j-service-sources.jar"/>
 	<classpathentry kind="lib" path="src/de/lib/pi4j/pi4j-service.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-core-javadoc.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-core-sources.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-core.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-device-javadoc.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-device-sources.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-device.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-example-javadoc.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-example-sources.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-example.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-gpio-extension-javadoc.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-gpio-extension-sources.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-gpio-extension.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-service-javadoc.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-service-sources.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-service.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
