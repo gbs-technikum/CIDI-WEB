@@ -15,12 +15,14 @@ import javax.servlet.http.HttpServletResponse;
 //@WebServlet("CIDI")
 public class CIDI extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private SQL mysql;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
     public CIDI() {
         super();
+        mysql = new SQL();
         // TODO Auto-generated constructor stub
     }
 
