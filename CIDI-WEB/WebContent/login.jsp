@@ -1,17 +1,14 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Connect it, Drive it</title>
 <link href="css/login.css" rel="stylesheet" type="text/css" />
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="js/countdown.js"></script>
 </head>
 <body>
+	<!-- Prüfung des Passworts und Benutzers -->
 	<div align="center">
 		<div id="login-box">
 			<table>
@@ -31,8 +28,11 @@
 						<table>
 							<tr>
 								<td>
-									<form action="steuerung.jsp" method="post">
-										<table id="login-anmelde">
+
+
+									<table id="login-anmelde">
+										<form action="Test" method="post">
+
 											<tr>
 												<th>Benutzername</th>
 												<td><input type="text" value="Max" name="benutzername" />
@@ -40,7 +40,7 @@
 											</tr>
 											<tr>
 												<th>Password
-												<td><input type="text" value="Mustermann"
+												<td><input type="password" value="Mustermann"
 													name="password" /></td>
 											</tr>
 											<tr>

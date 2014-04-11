@@ -9,4 +9,22 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>de.cidi.CIDI</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>sentData</servlet-name>
+  	<servlet-class>de.cidi.SENTDATA</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>sentData</servlet-name>
+  	<url-pattern>/sentData</url-pattern>
+  </servlet-mapping>
 </web-app>

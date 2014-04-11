@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,18 +6,6 @@
 <link href="css/steuerung.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<!-- Prüfung des Passworts und Benutzers -->
-	<%
-String name = request.getParameter("benutzername");
-String password = request.getParameter("password");
-//Benutzereingaben unbedingt filtern !!!
-if(name != null && name.length() > 0 && name.matches("[A-Za-z ]*")) {
-out.println("Name ist " + name +" Password ist "+ password);
-
-} else {
-out.println("Eingabe ist Falsch");	
-}	
-%>
 	<div align="center">
 		<div id="steuerung-box">
 			<table>
