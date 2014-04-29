@@ -10,23 +10,24 @@
 </head>
 <body>
 	<div align="center">
-	<!-- Prüfung des Passworts und Benutzers -->
-	<%
-String menge = request.getParameter("Menge");
-	int intZahl;
-int preis = 20;
-//Benutzereingaben unbedingt filtern !!!
-if(menge != null && menge.length() > 0 && menge.matches("[0-9 ]*")) {
-	intZahl =  Integer.parseInt(menge);
-	erg = intZahl * preis;
-	out.println("Die Menge ist " + intZahl +" und es kostet  "+ erg + " Euro");
+		<!-- Prüfung des Passworts und Benutzers -->
+		<%
+			String menge = request.getParameter("Menge");
+			int intZahl;
+			int preis = 20;
+			int erg;
+			//Benutzereingaben unbedingt filtern !!!
+			if (menge != null && menge.length() > 0 && menge.matches("[0-9 ]*")) {
+				intZahl = Integer.parseInt(menge);
+				erg = intZahl * preis;
+				out.println("Die Menge ist " + intZahl + " und es kostet  "
+						+ erg + " Euro");
 
-} else {
-out.println("Eingabe ist Falsch");	
-}	
-%>
+			} else {
+				out.println("Eingabe ist Falsch");
+			}
+		%>
 
-	
 	</div>
 </body>
 </html>

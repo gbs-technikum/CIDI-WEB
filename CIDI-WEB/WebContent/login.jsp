@@ -6,6 +6,7 @@
 <link href="css/login.css" rel="stylesheet" type="text/css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="js/countdown.js"></script>
+<script src="js/weiterleiten.js"></script>
 </head>
 <body>
 	<!-- Prüfung des Passworts und Benutzers -->
@@ -31,7 +32,7 @@
 
 
 									<table id="login-anmelde">
-										<form action="Test" method="post">
+										<form id ="weiterleiten" action="Test" method="post">
 
 											<tr>
 												<th>Benutzername</th>

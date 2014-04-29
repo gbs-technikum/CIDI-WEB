@@ -6,6 +6,30 @@ import java.sql.*;
 
 public class SQL {
 
+	public String getSqlBefehl() {
+		return sqlBefehl;
+	}
+
+	public void setSqlBefehl(String sqlBefehl) {
+		this.sqlBefehl = sqlBefehl;
+	}
+
+	public String getUser() {
+		return user;
+	}
+
+	public void setUser(String user) {
+		this.user = user;
+	}
+
+	public String getPasswort() {
+		return passwort;
+	}
+
+	public void setPasswort(String passwort) {
+		this.passwort = passwort;
+	}
+
 	PreparedStatement pst = null;
 	ResultSet rst = null;
 	Connection connection = null;
