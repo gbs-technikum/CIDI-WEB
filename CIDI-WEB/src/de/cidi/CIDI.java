@@ -12,58 +12,39 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class CIDI
  */
-//@WebServlet("CIDI")
+// @WebServlet("CIDI")
 public class CIDI extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private SQL mysql;
-
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public CIDI() {
-        super();
-        mysql = new SQL();
-        // TODO Auto-generated constructor stub
-    }
+	private Login log;
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public CIDI() {
+		super();
+		mysql = new SQL();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
 
 		PrintWriter pw = response.getWriter();
 		String user = request.getParameter("benutzername");
-		String passwd =  request.getParameter("password");
-		String html;
-		String mysqluseer = mysql.getUser();		//root
-		String mysqlpasswd = mysql.getPasswort();	//mysql
-		
-		
-		if(user.equals(mysqluseer) && passwd.equals(mysqlpasswd)) {
-			
-			html = "<html><head><body>"
-					+ "<meta http-equiv='refresh'"
-					+ "content='0; url=steuerung.jsp'>"
-					+ "</head><body><h1>richtig</h1></body></html>";
-			
-
-		} else {
-			html = "<html><head><body>"
-					+ "<meta http-equiv='refresh'"
-					+ "content='0; url=index.jsp'>"
-					+ "</head><body><h1>falsch</h1></body></html>";
-		
-			
-		}	
-			pw.print(html);
-		}
-
+		String passwd = request.getParameter("password");
+		log = new Login(user,passwd,pw);
+	}
 }

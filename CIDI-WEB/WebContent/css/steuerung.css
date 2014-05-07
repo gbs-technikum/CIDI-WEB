@@ -1,7 +1,7 @@
 #steuerung-box {
 	margin-top: 20px;
 	width: 600px;
-	height: 500px;
+	height: 625px;
 	color: black;
 	font: 12px Arial, Helvetica, sans-serif;
 	border-style: solid;
@@ -24,6 +24,7 @@
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+	margin-bottom: 105px;
 	margin-left: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -39,7 +40,7 @@
 	margin: 5px 10px 5px 10px;
 }
 #countdown-timer {
-	margin: 5px 10px 5px 60px;
+	margin: 5px 10px 5px 70px;
 }
 
 #steuerung-livetext {
@@ -55,8 +56,7 @@
 }
 
 #steuerung-Ueber {
-	margin-top: 5px;
-	margin-left: 10px;
+	margin-left: 25px;
 	width: 180px;
 	border-style: solid;
 	border-color: black;
@@ -88,9 +88,8 @@
 	margin-bottom: 70px;
 }
 #buttontable-lichter{
-	margin-left: 47px;
 	margin-top: 5px;
-	margin-right: 157px;
+	margin-right: 285px;
 	border-spacing: 0;
 	border-collapse: collapse;
 

@@ -6,54 +6,31 @@ import java.sql.*;
 
 public class SQL {
 
-	public String getSqlBefehl() {
-		return sqlBefehl;
-	}
-
-	public void setSqlBefehl(String sqlBefehl) {
-		this.sqlBefehl = sqlBefehl;
-	}
-
-	public String getUser() {
-		return user;
-	}
-
-	public void setUser(String user) {
-		this.user = user;
-	}
-
-	public String getPasswort() {
-		return passwort;
-	}
-
-	public void setPasswort(String passwort) {
-		this.passwort = passwort;
-	}
-
 	PreparedStatement pst = null;
 	ResultSet rst = null;
 	Connection connection = null;
 	String sqlBefehl = "";
 	String datenbankpfad, user, passwort;
-	
+
 	
 	public SQL() {
 		datenbankpfad = "jdbc:mysql://localhost:3306/cidi" ;
 		user = "root" ;
 		passwort = "mysql" ;
-		
 		verbindung();
 	}
 
 	private void verbindung() {
 		//Verbindung DB cidi
 		try {
+	
 			connection = DriverManager.getConnection(datenbankpfad, user, passwort);
 			System.out.println("-> Verbindung hergestellt!");
 		} catch (SQLException e) {
 			e.printStackTrace();
 			System.out.println("-> Zonk keine Verbindung DB");
-		}
+		 }
+	
 	}
 	
 	public String pruefeLogin(String nutzerName, String pw){
@@ -138,9 +115,9 @@ public class SQL {
 
 	
 //	public static void main(String[] args) {
-//		SQL s = new SQL();
-//		System.out.println(s.pruefeLogin("becker", "becker"));
-//		
+//SQL s = new SQL();
+//System.out.println(s.pruefeLogin("huber", "huber"));
+		
 //		s.logout();
 //	}
 }

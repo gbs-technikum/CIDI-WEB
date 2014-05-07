@@ -6,11 +6,7 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
-		<attributes>
-			<attribute name="owner.project.facets" value="jst.web"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="src/de/lib/pi4j/pi4j-core-javadoc.jar"/>
@@ -43,5 +39,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-service-javadoc.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-service-sources.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/pi4j-service.jar"/>
+	<classpathentry kind="lib" path="D:/I3A-Kuznia/lib/mysql-connector-java-5.1.29-bin.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

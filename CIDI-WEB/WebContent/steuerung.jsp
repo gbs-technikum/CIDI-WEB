@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Connect it, Drive it</title>
 <link href="css/steuerung.css" rel="stylesheet" type="text/css" />
+<script src="http://jwpsrv.com/library/z5V7TllCEeOs8iIACqoGtw.js"></script>
 </head>
 <body>
 	<div align="center">
@@ -14,8 +15,23 @@
 					<td><div id="steuerung-Ueber">Connect it, Drive it</div></td>
 				<tr>
 				<tr>
-					<td><a href="#"><img src="images/screen.jpg" width="300"
-							height="120" /></a></td>
+					<td>
+						<div id='playerZaIZzFythhhe'></div>
+							<script type='text/javascript'>
+							    jwplayer('playerZaIZzFythhhe').setup({
+							        file: 'rtmp://192.168.15.85/flvplayback/flv:myStream.flv',
+							        image: 'http://www.longtailvideo.com/content/images/jw-player/lWMJeVvV-876.jpg',
+							        width: '350',
+							        height: '250',
+							        autostart: 'true',
+							        repeat: 'always',
+							        aspectratio: '16:9',
+							        fallback: 'false',
+							        primary: 'flash'
+							    });
+							</script>
+						</div>
+					</td>
 					<td><table id="steuerung-timerbox">
 							<tr>
 								<td><div class="steuerung-timertext">Verbleibene Zeit</div></td>
@@ -27,6 +43,13 @@
 								<td><div class="steuerung-timertext">Benutzername</div></td>
 
 							</tr>
+							<tr>
+						<td><div class="steuerung-timertext"">
+							<FORM action="webshop.jsp">
+								<INPUT type="submit" value="Verbindung abbrechen" />
+							</FORM>
+							</div></td>
+							</tr>
 						</table></td>
 				</tr>
 			</table>
@@ -34,21 +57,8 @@
 			<!-- Lampen buttons -->
 			<table id="buttontable-lichter">
 				<tr>
+				
 					<td>
-
-						<div>
-							<button name="Hupe" type="button" value="hupebutton"
-								id="buttonHupe">
-								<p>
-									<img src="images/hupe_inaktiv.png" width="50" height="50"
-										alt="Hupe" id="imgHupe"><br>
-								</p>
-							</button>
-						</div>
-
-					</td>
-					<td>
-
 						<div>
 							<button name="Fernlicht" type="button" value="fernlichtbutton"
 								id="buttonFernlicht">
@@ -72,13 +82,6 @@
 							</button>
 						</div>
 
-					</td>
-					<td>
-						<div id="button-verbindungabbrechen">
-							<FORM action="webshop.jsp">
-								<INPUT type="submit" value="Verbindung abbrechen" />
-							</FORM>
-						</div>
 					</td>
 			</table>
 			<!-- Steurungsbutton -->
