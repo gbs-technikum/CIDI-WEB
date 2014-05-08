@@ -11,14 +11,13 @@
   </welcome-file-list>
   
   <servlet>
-    <servlet-name>Test</servlet-name>
-    <servlet-class>de.cidi.CIDI</servlet-class>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>de.cidi.Login</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Test</servlet-name>
-    <url-pattern>/Test</url-pattern>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
   </servlet-mapping>
-  
   <servlet>
   	<servlet-name>sentData</servlet-name>
   	<servlet-class>de.cidi.SENTDATA</servlet-class>
@@ -26,5 +25,13 @@
   <servlet-mapping>
   	<servlet-name>sentData</servlet-name>
   	<url-pattern>/sentData</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>close</servlet-name>
+  	<servlet-class>de.cidi.CLOSE</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>close</servlet-name>
+  	<url-pattern>/close</url-pattern>
   </servlet-mapping>
 </web-app>

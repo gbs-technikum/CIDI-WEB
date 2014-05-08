@@ -4,9 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Connect it, Drive it</title>
 <link href="css/login.css" rel="stylesheet" type="text/css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="http://jwpsrv.com/library/z5V7TllCEeOs8iIACqoGtw.js"></script>
 <script src="js/countdown.js"></script>
-<script src="js/weiterleiten.js"></script>
 </head>
 <body>
 	<!-- Prüfung des Passworts und Benutzers -->
@@ -18,7 +17,7 @@
 						<table>
 							<tr>
 								<td>
-									<h1>Connect it, Drive it</h1>
+								<h1>Connect it, Drive it</h1>
 								</td>
 								<td>
 									<div id="login-livetext">Live-View</div>
@@ -29,11 +28,8 @@
 						<table>
 							<tr>
 								<td>
-
-
 									<table id="login-anmelde">
-										<form id ="weiterleiten" action="Test" method="post">
-
+										<form action="Login" method="post">
 											<tr>
 												<th>Benutzername</th>
 												<td><input type="text" value="Max" name="benutzername" />
@@ -48,12 +44,26 @@
 												<th><input type="reset" value="Abbrechen" /></th>
 												<td><input type="submit" value="Anmelden" /></td>
 											</tr>
-
-										</table>
-									</form>
+										</form>
+									</table>
 								</td>
-								<td><a href="#"><img src="images/screen.jpg"
-										width="300" height="120"></a></td>
+								<td>
+								<div id='playerZaIZzFythhhe'>
+									<script type='text/javascript'>
+									    jwplayer('playerZaIZzFythhhe').setup({
+									        file: 'rtmp://192.168.15.85/flvplayback/flv:myStream.flv',
+									        image: 'http://www.longtailvideo.com/content/images/jw-player/lWMJeVvV-876.jpg',
+									        width: '350',
+									        height: '250',
+									        autostart: 'true',
+									        repeat: 'always',
+									        aspectratio: '16:9',
+									        fallback: 'false',
+									        primary: 'flash'
+									    });
+									</script>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td></td>

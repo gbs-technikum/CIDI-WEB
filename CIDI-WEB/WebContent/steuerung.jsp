@@ -16,19 +16,21 @@
 				<tr>
 				<tr>
 					<td>
-						<div id='playerZaIZzFythhhe'></div>
+						<div id='playerZaIZzFythhhe'>
 							<script type='text/javascript'>
-							    jwplayer('playerZaIZzFythhhe').setup({
-							        file: 'rtmp://192.168.15.85/flvplayback/flv:myStream.flv',
-							        image: 'http://www.longtailvideo.com/content/images/jw-player/lWMJeVvV-876.jpg',
-							        width: '350',
-							        height: '250',
-							        autostart: 'true',
-							        repeat: 'always',
-							        aspectratio: '16:9',
-							        fallback: 'false',
-							        primary: 'flash'
-							    });
+								jwplayer('playerZaIZzFythhhe')
+										.setup(
+												{
+													file : 'rtmp://192.168.15.85/flvplayback/flv:myStream.flv',
+													image : 'http://www.longtailvideo.com/content/images/jw-player/lWMJeVvV-876.jpg',
+													width : '350',
+													height : '250',
+													autostart : 'true',
+													repeat : 'always',
+													aspectratio : '16:9',
+													fallback : 'false',
+													primary : 'flash'
+												});
 							</script>
 						</div>
 					</td>
@@ -44,11 +46,11 @@
 
 							</tr>
 							<tr>
-						<td><div class="steuerung-timertext"">
-							<FORM action="webshop.jsp">
-								<INPUT type="submit" value="Verbindung abbrechen" />
-							</FORM>
-							</div></td>
+								<td><div class="steuerung-timertext"">
+										<FORM action="close">
+											<INPUT type="submit" value="Verbindung abbrechen" />
+										</FORM>
+									</div></td>
 							</tr>
 						</table></td>
 				</tr>
@@ -57,7 +59,7 @@
 			<!-- Lampen buttons -->
 			<table id="buttontable-lichter">
 				<tr>
-				
+
 					<td>
 						<div>
 							<button name="Fernlicht" type="button" value="fernlichtbutton"

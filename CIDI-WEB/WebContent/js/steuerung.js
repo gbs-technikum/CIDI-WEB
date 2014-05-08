@@ -1,4 +1,3 @@
-
 // ///Status\\\\\
 
 var bleft = false;
@@ -7,8 +6,9 @@ var bup = false;
 var bdown = false;
 var bflicht = false;
 var balicht = false;
-var bhupe = false;
 
+var imgAbblendlicht = 1;
+var imgFernlicht = 1;
 // /////////////Funktionen Licht\\\\\\\\\\\\\\\
 // ///Funktion Abblendlicht\\\\\
 var switchAbblendlicht = function() {
@@ -23,6 +23,7 @@ var switchAbblendlicht = function() {
 		imgAbblendlicht++;
 		balicht = false;
 	}
+
 	moveAjax();
 };
 
@@ -38,20 +39,6 @@ var switchFernlicht = function() {
 				"images/fernlicht_inaktiv.png");
 		imgFernlicht++;
 		bflicht = false;
-	}
-	moveAjax();
-};
-
-// ///Funktion Hupe\\\\\
-var switchHupe = function(eingabe) {
-	if (eingabe === "ein") {
-		document.getElementById("imgHupe").setAttribute("src",
-				"images/hupe_aktiv.png");
-		bhupe = true;
-	} else {
-		document.getElementById("imgHupe").setAttribute("src",
-				"images/hupe_inaktiv.png");
-		bhupe=false;
 	}
 	moveAjax();
 };
@@ -122,15 +109,7 @@ document.getElementById("buttonAbblendlicht").addEventListener("click",
 document.getElementById("buttonFernlicht").addEventListener("click",
 		switchFernlicht, false);
 
-// ///Event Hupe\\\\\
-document.getElementById("buttonHupe").addEventListener("mousedown", function() {
-	switchHupe("ein");
-}, false);
-document.getElementById("buttonHupe").addEventListener("mouseup", function() {
-	switchHupe("aus");
-}, false);
-
-// ///Event Hupe\\\\\
+// ///Event Oben\\\\\
 document.getElementById("buttonPfeiloben").addEventListener("mousedown",
 		function() {
 			switchPfeiloben("ein");
@@ -140,7 +119,7 @@ document.getElementById("buttonPfeiloben").addEventListener("mouseup",
 			switchPfeiloben("aus");
 		}, false);
 
-// ///Event Hupe\\\\\
+// ///Event Links\\\\\
 document.getElementById("buttonPfeillinks").addEventListener("mousedown",
 		function() {
 			switchPfeillinks("ein");
@@ -150,7 +129,7 @@ document.getElementById("buttonPfeillinks").addEventListener("mouseup",
 			switchPfeillinks("aus");
 		}, false);
 
-// ///Event Hupe\\\\\
+// ///Event Unten\\\\\
 document.getElementById("buttonPfeilunten").addEventListener("mousedown",
 		function() {
 			switchPfeilunten("ein");
@@ -160,7 +139,7 @@ document.getElementById("buttonPfeilunten").addEventListener("mouseup",
 			switchPfeilunten("aus");
 		}, false);
 
-// ///Event Hupe\\\\\
+// ///Event Rechts\\\\\
 document.getElementById("buttonPfeilrechts").addEventListener("mousedown",
 		function() {
 			switchPfeilrechts("ein");
@@ -179,9 +158,6 @@ window.addEventListener('keydown', function(e) {
 		break;
 	case 65: // a
 		switchAbblendlicht();
-		break;
-	case 72: // h
-		switchHupe("ein");
 		break;
 	// ////Pfeile\\\\\
 	case 37: // <-
@@ -202,9 +178,6 @@ window.addEventListener('keydown', function(e) {
 // ///Event Taste loslassen\\\\\
 window.addEventListener('keyup', function(e) {
 	switch (e.keyCode) {
-	case 72:
-		switchHupe("aus");
-		break;
 	// ////Pfeile\\\\\
 	case 37: // <-
 		switchPfeillinks("aus");
@@ -225,6 +198,6 @@ var moveAjax = function() {
 	var request = new XMLHttpRequest();
 	request.open("GET", "sentData?left=" + bleft + "&right=" + bright + "&up="
 			+ bup + "&down=" + bdown + "&flicht=" + bflicht + "&alicht="
-			+ balicht + "&hupe=" + bhupe);
+			+ balicht);
 	request.send();
 };

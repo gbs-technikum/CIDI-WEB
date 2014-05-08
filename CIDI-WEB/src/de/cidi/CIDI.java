@@ -2,6 +2,7 @@ package de.cidi;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 //import javax.servlet.annotation.WebServlet;
@@ -15,16 +16,21 @@ import javax.servlet.http.HttpServletResponse;
 // @WebServlet("CIDI")
 public class CIDI extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private SQL mysql;
 	private Login log;
-
+	private static DAO mysql;
+	
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
 	public CIDI() {
 		super();
-		mysql = new SQL();
+
 		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void init() throws ServletException {
+		mysql = new DAO();
 	}
 
 	/**
@@ -40,11 +46,32 @@ public class CIDI extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
-
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter pw = response.getWriter();
 		String user = request.getParameter("benutzername");
 		String passwd = request.getParameter("password");
-		log = new Login(user,passwd,pw);
+		Boolean pruefung = false;
+		String html;
+		pruefung = mysql.anmelden(user, passwd);
+	
+		if (pruefung == true) {
+			html = "<html><head><body>" + "<meta http-equiv='refresh'"
+					+ "content='0; url=steuerung.jsp'>"
+					+ "</head><body>richtig</body></html>";
+
+		} else {
+
+			html = "<html><head><body>" + "<meta http-equiv='refresh'"
+					+ "content='0; url=index.jsp'>"
+					+ "</head><body>falsch</body></html>";
+
+		}
+		pw.print(html);
 	}
+
+	public static DAO getMysql() {
+		return mysql;
+	}
+	
 }
