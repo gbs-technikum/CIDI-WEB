@@ -52,7 +52,7 @@
 									<script type='text/javascript'>
 									    jwplayer('playerZaIZzFythhhe').setup({
 									        file: 'rtmp://192.168.15.85/flvplayback/flv:myStream.flv',
-									        image: 'http://www.longtailvideo.com/content/images/jw-player/lWMJeVvV-876.jpg',
+									        image: 'images/screen.jpg',
 									        width: '350',
 									        height: '250',
 									        autostart: 'true',

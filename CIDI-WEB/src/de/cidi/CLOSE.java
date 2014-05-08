@@ -18,7 +18,7 @@ public class CLOSE extends HttpServlet{
 		// TODO Auto-generated method stub
 		super.init();
 		//c = Controller.getInstance();
-		db = CIDI.getMysql();
+		db = Login.getMysql();
 	}
 
 	public CLOSE() {
