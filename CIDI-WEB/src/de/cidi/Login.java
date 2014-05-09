@@ -54,7 +54,7 @@ public class Login extends HttpServlet {
 		String html;
 		String wartezeit;
 		int zeit = mysql.getMaxWarteZeitsek();
-		wartezeit = mysql.wartenschlange()
+
 		System.out.println("Die Zeit  " + zeit);
 		if (zeit == -1) {
 			pruefung = mysql.anmelden(user, passwd);
