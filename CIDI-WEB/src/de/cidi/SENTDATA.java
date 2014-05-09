@@ -16,7 +16,7 @@ public class SENTDATA extends HttpServlet{
 	public void init() throws ServletException {
 		// TODO Auto-generated method stub
 		super.init();
-		c = Controller.getInstance();
+		c = Controller.getInstance();				//Controller Instance holen
 	}
 
 	public SENTDATA() {
@@ -28,16 +28,17 @@ public class SENTDATA extends HttpServlet{
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
+		//Get werte abrufen
+		
 		boolean left	=	Boolean.parseBoolean(request.getParameter("left"));
 		boolean right 	=	Boolean.parseBoolean(request.getParameter("right"));
 		boolean up 		= 	Boolean.parseBoolean(request.getParameter("up"));
 		boolean down 	= 	Boolean.parseBoolean(request.getParameter("down"));
 		boolean flicht 	= 	Boolean.parseBoolean(request.getParameter("flicht"));
 		boolean alicht 	= 	Boolean.parseBoolean(request.getParameter("alicht"));
-		boolean hupe 	= 	Boolean.parseBoolean(request.getParameter("hupe"));
 		
-		c.drive(left,right,up,down,flicht,alicht,hupe);
+		c.drive(left,right,up,down,flicht,alicht);				//Werte an Controller übergeben
 	}
 
 }

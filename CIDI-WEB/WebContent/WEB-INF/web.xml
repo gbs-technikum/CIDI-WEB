@@ -34,4 +34,13 @@
   	<servlet-name>close</servlet-name>
   	<url-pattern>/close</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>getData</servlet-name>
+  	<servlet-class>de.cidi.GETDATA</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>getData</servlet-name>
+  	<url-pattern>/getData</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

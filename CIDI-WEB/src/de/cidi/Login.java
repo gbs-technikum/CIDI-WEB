@@ -50,22 +50,34 @@ public class Login extends HttpServlet {
 		PrintWriter pw = response.getWriter();
 		String user = request.getParameter("benutzername");
 		String passwd = request.getParameter("password");
-		Boolean pruefung = false;
+		boolean pruefung = false;
 		String html;
-		pruefung = mysql.anmelden(user, passwd);
-		if (pruefung == true) {
-			html = "<html><head><body>" + "<meta http-equiv='refresh'"
-					+ "content='0; url=steuerung.jsp'>"
-					+ "</head><body></body></html>";
+		String wartezeit;
+		int zeit = mysql.getMaxWarteZeitsek();
+		wartezeit = mysql.wartenschlange()
+		System.out.println("Die Zeit  " + zeit);
+		if (zeit == -1) {
+			pruefung = mysql.anmelden(user, passwd);
+			if (pruefung == true) {
+				html = "<html><head><body>" + "<meta http-equiv='refresh'"
+						+ "content='0; url=steuerung.jsp'>"
+						+ "</head><body></body></html>";
+			} else {
 
+				html = "<html><head><body>" + "<meta http-equiv='refresh'"
+						+ "content='0; url=login.jsp'>"
+						+ "</head><body></body></html>";
+			}
 		} else {
-
-			html = "<html><head><body>" + "<meta http-equiv='refresh'"
-					+ "content='0; url=index.jsp'>"
-					+ "</head><body></body></html>";
-
+		
+				html = "<html><head><body>" + "<meta http-equiv='refresh'"
+						+ "content='0; url=login.jsp'>"
+						+ "</head><body></body></html>";
+			
 		}
+
 		pw.print(html);
+
 	}
 
 	public static DAO getMysql() {

@@ -1,11 +1,30 @@
 var wartezeitMin = 15;
 var wartezeitSek = 00;
+var getTimeSek = 0;
 var loginOk = true;
 
 document.getElementById("countdown-timer").innerHTML = "15:00";
 
+function getTime() {
+	var request = new XMLHttpRequest();
+	request.open("POST", "getData");
+    request.send();
+    request.onreadystatechange = function(){
+        if(request.readyState === 4){
+            getTimeSek = request.responseText;
+            
+        }
+    }
+    wartezeitMin = getTimeSek/60;
+    wartezeitSek = getTimeSek%60;
+}
+
+
 function countdown() {
 
+	if(wartezeitSek%5==0)
+		getTime();
+	
 	wartezeitSek--;
 	if (wartezeitSek < 0) {
 		wartezeitSek = 59;

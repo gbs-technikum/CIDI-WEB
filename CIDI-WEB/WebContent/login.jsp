@@ -48,21 +48,7 @@
 									</table>
 								</td>
 								<td>
-								<div id='playerZaIZzFythhhe'>
-									<script type='text/javascript'>
-									    jwplayer('playerZaIZzFythhhe').setup({
-									        file: 'rtmp://192.168.15.85/flvplayback/flv:myStream.flv',
-									        image: 'images/screen.jpg',
-									        width: '350',
-									        height: '250',
-									        autostart: 'true',
-									        repeat: 'always',
-									        aspectratio: '16:9',
-									        fallback: 'false',
-									        primary: 'flash'
-									    });
-									</script>
-									</div>
+									<embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org" version="VideoLAN.VLCPlugin.2"  width="350" controls="false" height="240" id="vlc" loop="yes" autoplay="yes" target="rtsp://192.168.15.85:8554/"></embed>
 								</td>
 							</tr>
 							<tr>
