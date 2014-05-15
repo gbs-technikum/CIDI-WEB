@@ -1,0 +1,96 @@
+#steuerung-box {
+	margin-top: 20px;
+	width: 600px;
+	height: 625px;
+	color: black;
+	font: 12px Arial, Helvetica, sans-serif;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+#steuerung-lampen {
+	margin-left: 30px;
+}
+#steuerung-pfeile {
+	margin-left: 30px;
+}
+
+#steuerung-logout {
+	margin-left: 90px;
+}
+
+#steuerung-timerbox {
+	width: 185px;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	margin-bottom: 105px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.steuerung-timertext {
+	background-color: #d9d9d9;
+	border-style: solid;
+	border-color: Black;
+	border-width: 2px;
+	font: bold 16px "Calibri", Arial;
+	text-align: center;
+	margin: 5px 10px 5px 10px;
+}
+#countdown-timer {
+	margin: 5px 10px 5px 70px;
+}
+
+#steuerung-livetext {
+	margin-top: 5px;
+	background-color: #d9d9d9;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	margin-right: 100px;
+	margin-left: 100px;
+	font: bold 20px "Calibri", Arial;
+	text-align: center;
+}
+
+#steuerung-Ueber {
+	margin-left: 25px;
+	width: 180px;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	font: bold 20px "Calibri", Arial;
+	text-align: center
+}
+
+#steuerung-webshop {
+	padding: 0 0 0 350px;
+	width: 103px;
+	height: 42px;
+}
+
+#steuerung-footer {
+	margin-right: 120px;
+	padding: 0 0 0 0;
+	width: 38em;
+	height: 50px;
+}
+
+#steuerung-button{
+	margin-top: 5px;
+	margin-right: 280px;
+	
+}
+#button-verbindungabbrechen{
+	margin-left: 100px;
+	margin-bottom: 70px;
+}
+#buttontable-lichter{
+	margin-top: 5px;
+	margin-right: 285px;
+	border-spacing: 0;
+	border-collapse: collapse;
+
+}

@@ -1,0 +1,59 @@
+#login-box {
+	padding-top: 5px;
+	margin-top: 20px;
+	margin-bottom: -10px;
+	width:700px;
+	height: 450px;
+	color: black;
+	font: 12px Arial, Helvetica, sans-serif;
+	border-style: solid;
+	border-color:black;
+	border-width:2px;
+}
+#login-livetext {
+	background-color:#E9E9E9;
+	border-style: solid;
+	border-color:black;
+	padding: 0 5px 0 5px;
+	border-width:2px;
+	margin-left: 135px;
+	font: bold 20px "Calibri", Arial;
+}
+
+#login-anmelde{
+	margin-bottom: 140px;
+	margin-right: 10px;
+	padding: 10px 10px 10px 10px;
+	background-color:#d9d9d9;
+	border-style: solid;
+	border-color:black;
+	border-width:2px;
+	
+
+}
+#login-box h1{
+	width: 265px;
+	border-style: solid;
+	border-color:black;
+	border-width:2px;
+	padding:0;
+	margin:0;
+	font: bold 30px "Calibri", Arial;
+	text-align: center 
+}
+#login-webshop{
+	padding: 0 0 0 350px;
+	width: 103px; 
+	height: 42px; 
+}
+
+#login-footer{
+	margin-top: 45px;
+	margin-right: 85px;
+	padding: 10px 0 0 0;
+	width: 38em;
+	height: 50px;
+}
+#timerbox{
+margin-left:110px;
+}

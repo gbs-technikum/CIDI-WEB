@@ -1,0 +1,53 @@
+#webshop-box {
+	margin-top: 20px;
+	width: 600px;
+	height: 250px;
+	color: black;
+	font: 12px Arial, Helvetica, sans-serif;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+#webshop-box h1 {
+	padding: 0;
+	margin: 0;
+	font: bold 30px "Calibri", Arial;
+	text-align: center;
+}
+
+
+#webshop-boxrechts {
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+#webshop-boxrechtstext {
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	padding: 5px 10px 5px 10px;
+}
+
+#webshop-boxlinks {
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	padding: 0 20px 0 0;
+}
+#webshop-beschreibungbild{
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+#webshop-beschreibungtext {
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	width: 295px;
+}
+
+
+
+

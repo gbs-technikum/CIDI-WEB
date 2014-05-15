@@ -1,0 +1,32 @@
+#login-willkommen{
+		margin: -25px auto 0 auto;	
+}
+#login-box {
+	margin-top: 20px;
+	width:333px;
+	height: 352px;
+	padding: 58px 76px 0 76px;
+	color: black;
+	font: 12px Arial, Helvetica, sans-serif;
+	background: url(../images/background.jpg) no-repeat left top;
+}
+
+#login-button{
+	margin: 0 auto 0 auto;
+	padding: 220px 0 0 0;
+	width: 103px; 
+	height: 42px; 
+}
+#login-webshop{
+	padding: 0 0 0 320px;
+	width: 103px; 
+}
+
+#login-footer{
+	margin: 0 auto 0 auto;
+	padding: 10px 0 10px 0;
+	width: 38em;
+	border-style: solid;
+	border-color:black;
+	border-width:2px;
+}
