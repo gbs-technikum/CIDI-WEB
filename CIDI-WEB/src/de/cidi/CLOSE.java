@@ -33,7 +33,8 @@ public class CLOSE extends HttpServlet{
 
 		//c.close();									//Verbindung trennen
 		db.abmelden();								//SQL User abmelden
-		response.sendRedirect( "webshop.jsp" );		//weiterleitun an Webshop
+	
+		response.sendRedirect( "login.jsp" );		//weiterleitung an Login
 	}
 
 }
