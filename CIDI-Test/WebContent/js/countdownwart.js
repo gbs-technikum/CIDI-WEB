@@ -25,21 +25,6 @@ function getTime() {
     wartezeitSek = parseInt(getTimeSek%60);	    
 }
 
-function getLogin() {
-	var request = new XMLHttpRequest();
-	request.open("POST", "Login");
-    request.send();
-    request.onreadystatechange = function(){
-        if(request.readyState === 4){
-        	if(request.responseText === "true")
-        		loginOk=true;
-        	else
-        		loginOk=false;
-        }
-    }
-}
-
-
 function countdown() {
 
 	if(wartezeitSek%15==0 && autoLoad)
@@ -61,6 +46,7 @@ function countdown() {
 	document.getElementById("countdown-timer").innerHTML = wMin + ":" + wSek;
 
 	if (wartezeitMin === 0 && wartezeitSek === 0) {
+		alert("aaaa");
 		window.location = "steuerung.jsp";
 	}
 };
