@@ -9,36 +9,48 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
   <servlet>
-    <servlet-name>Login</servlet-name>
-    <servlet-class>de.cidi.Login</servlet-class>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>de.cidi.Login</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>sentData</servlet-name>
+  	<servlet-class>de.cidi.SENTDATA</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Login</servlet-name>
-    <url-pattern>/Login</url-pattern>
+  	<servlet-name>sentData</servlet-name>
+  	<url-pattern>/sentData</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>sentData</servlet-name>
-    <servlet-class>de.cidi.SENTDATA</servlet-class>
+  	<servlet-name>close</servlet-name>
+  	<servlet-class>de.cidi.CLOSE</servlet-class>
   </servlet>
+   <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<servlet-class>de.cidi.Logout</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>sentData</servlet-name>
-    <url-pattern>/sentData</url-pattern>
+  	<servlet-name>close</servlet-name>
+  	<url-pattern>/close</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>close</servlet-name>
-    <servlet-class>de.cidi.CLOSE</servlet-class>
+  	<servlet-name>getData</servlet-name>
+  	<servlet-class>de.cidi.GETDATA</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>close</servlet-name>
-    <url-pattern>/close</url-pattern>
+  	<servlet-name>getData</servlet-name>
+  	<url-pattern>/getData</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <servlet-name>getData</servlet-name>
-    <servlet-class>de.cidi.GETDATA</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>getData</servlet-name>
-    <url-pattern>/getData</url-pattern>
-  </servlet-mapping>
+  
 </web-app>
