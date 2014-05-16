@@ -2,7 +2,6 @@ var wartezeitMin = 15;
 var wartezeitSek = 00;
 var getTimeSek = 0;
 var loginOk = false;
-var autoLoad = true;
 
 document.getElementById("countdown-timer").innerHTML = "15:00";
 
@@ -14,12 +13,11 @@ function getTime() {
         if(request.readyState === 4){
             getTimeSek = request.responseText;
             getTimeSek=parseInt(getTimeSek);
-            
+            Console.log(getTimeSek);
         }
     }
     if(getTimeSek===-1){
-    	getTimeSek=900;
-    	autoLoad=false;
+    	window.location = "steuerung.jsp";
     }
     wartezeitMin = parseInt(getTimeSek/60);
     wartezeitSek = parseInt(getTimeSek%60);	    
@@ -27,7 +25,7 @@ function getTime() {
 
 function countdown() {
 
-	if(wartezeitSek%15==0 && autoLoad)
+	if(wartezeitSek%15===0)
 		getTime();
 	
 	wartezeitSek--;

@@ -1,5 +1,7 @@
 package de.cidi;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -32,7 +34,7 @@ public class DAO {
 			pstlogout = con.prepareStatement("UPDATE sitzung SET endeSteuerung=NOW() WHERE id_sitzung=?");
 			pstwarteschlange = con.prepareStatement("SELECT * FROM benutzer WHERE useFlag=true");
 			pstAnzUserVor = con.prepareStatement("SELECT COUNT(id_sitzung) FROM sitzung WHERE endeSteuerung='0000-00-00 00:00:00' GROUP BY(endeSteuerung)");
-			pstlogin = con.prepareStatement("SELECT id FROM benutzer WHERE nutzername=? AND passwort=PASSWORD(?)");
+			pstlogin = con.prepareStatement("SELECT id FROM benutzer WHERE nutzername=? AND passwort=?");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -62,7 +64,7 @@ public class DAO {
 	public Boolean anmelden(String benutzername, String pw) {
 		try {
 			pstlogin.setString(1, benutzername);
-			pstlogin.setString(2, pw);
+			pstlogin.setString(2, sha1(benutzername + pw));
 			rst = pstlogin.executeQuery();
 			if( rst.next() ){
 				idNutzer = Integer.parseInt(rst.getString(1)); //geprüft passt
@@ -280,5 +282,20 @@ public class DAO {
 		}
 		return -1;
 	}
-
+    private String sha1(String input) {
+        MessageDigest mDigest;
+		try {
+			mDigest = MessageDigest.getInstance("SHA1");
+	        byte[] result = mDigest.digest(input.getBytes());
+	        StringBuffer sb = new StringBuffer();
+	        for (int i = 0; i < result.length; i++) {
+	            sb.append(Integer.toString((result[i] & 0xff) + 0x100, 16).substring(1));
+	        }
+	        return sb.toString();
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		}
+		System.out.println("hash konnte nicht gebildet werden");
+		return "möp";
+    }
 }

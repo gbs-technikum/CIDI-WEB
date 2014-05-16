@@ -17,7 +17,7 @@ public class CLOSE extends HttpServlet{
 	public void init() throws ServletException {
 		// TODO Auto-generated method stub
 		super.init();
-		c = Controller.getInstance();
+		c = Controller.getInstance();				//Controller Instance holen
 		db = Login.getMysql();
 	}
 
@@ -30,10 +30,9 @@ public class CLOSE extends HttpServlet{
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		//c.close();									//Verbindung trennen
+		Login.getSession(request);
 		db.abmelden();								//SQL User abmelden
-		c.close();
+		//c.close();									//Verbindung trennen
 		response.sendRedirect( "login.jsp" );		//weiterleitung an Login
 	}
 

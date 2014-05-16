@@ -71,9 +71,6 @@ public class Login extends HttpServlet {
 						+ user
 						+ "'"
 						+ "name='benutzername' disabled='disabled'/></td></tr><tr><th>Password<td><input type='password' value='Mustermann' name='password'  disabled='disabled'/></td></tr><tr><th><input id='reset' name='reset_button' type='reset' value='Abbrechen' /></th><td><input id='submit' name='submit_button' type='submit' value='Anmelden'  disabled='disabled'/></td></tr></form></table></td><td><embed type='application/x-vlc-plugin' pluginspage='http://www.videolan.org' version='VideoLAN.VLCPlugin.2'  width='350' controls='false' height='240' id='vlc' loop='yes' autoplay='yes' target='rtsp://192.168.15.85:8554/'></embed></td></tr><tr><td></td><td><table id='timerbox'><tr><td>Verbleibene Wartezeit: <a id='countdown-timer'></a></td></tr></table></td></tr></table></table><footer id='login-footer'><div id='login-webshop'><table><tr><td><a href='AGB.jsp'>AGB</a></td><td><a href='Impressum.jsp'>Impressum</a></td><td><FORM action='webshop.jsp'><INPUT type='submit' value='Zum Webshop' /></FORM></td></tr></table></div></footer></div></div><SCRIPT type='text/javascript' src='js/countdownwart.js'></SCRIPT></body></html>";
-				//CountDown();
-				
-				
 				pw.print(html);
 
 			}
@@ -83,51 +80,7 @@ public class Login extends HttpServlet {
 		}
 
 	}
-
-
-    public void CountDown() {
-    	getTimesql();
-        Timer timer = new Timer();
-        TimerTask task = new TimerTask() {
-            @Override
-            public void run() {
-            	System.out.println("Timer A in actionperformer: "+ wartezeitMin + " " + wartezeitSek);
-				if (wartezeitMin == 0 && wartezeitSek == 0|| wartezeitMin == -666) {
-					System.out.println("los");
-					try {
-						response.sendRedirect("steuerung.jsp");
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						System.out.println("bla");
-					}
-				}
-				wartezeitSek--;
-				if (wartezeitSek < 0) {
-					wartezeitSek = 59;
-					wartezeitMin--;
-				}
-
-				if (wartezeitSek % 10 == 0) { // Pr�ft alle 10 sekunden ob sich die WarteZeit ver�ndert hat
-					getTimesql();
-				}
-            }
-        };
-        timer.schedule(task, 0, 1000);
-    }
-
-
-	private void getTimesql() {
-		int i = mysql.getMaxWarteZeitsek();
-		// System.out.println("getTimesql() wert von DAO" + i);
-		if (i != -1) {
-			this.wartezeitSek = i % 60;
-			this.wartezeitMin = i / 60;
-		} else {
-			this.wartezeitMin = -666;
-		}
-	}
 	
-
 	public static DAO getMysql() {
 		return mysql;
 	}
@@ -147,6 +100,6 @@ public class Login extends HttpServlet {
 			id=Integer.parseInt((String)session.getAttribute("sessionID"));
 			mysql.setIdSitzung(id);
 		}
-			System.out.println("id: " + id+" s: "+session.getAttribute("sessionID"));
+			//System.out.println("id: " + id+" s: "+session.getAttribute("sessionID"));
 	}
 }
